@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodash</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Estrutura do Modal -->
+    <div id="configModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Configurações</h2>
+            <label for="pomoInput">Pomodoro (minutos):</label>
+            <input type="number" id="pomoInput" value="25">
+            <br>
+            <label for="shortInput">Pausa Curta (minutos):</label>
+            <input type="number" id="shortInput" value="5">
+            <br>
+            <label for="longInput">Pausa Longa (minutos):</label>
+            <input type="number" id="longInput" value="15">
+            <br>
+            <label for="interval">Intervalos:</label>
+            <input type="number" id="interval" value="4">
+            <br><br>
+            <button id="saveConfig" onclick="salvar()">Salvar</button>
+        </div>
+    </div>
+
+    <div id="musicModal" class="modal-music">
+        <div class="modal-content-music">
+            <span class="close-music">&times;</span>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1234281943&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/lofibloom" title="Lofi Bloom" target="_blank" style="color: #cccccc; text-decoration: none;">Lofi Bloom</a> · <a href="https://soundcloud.com/lofibloom/sets/lofi-sleep-music-lofi-rain-beats" title="lofi sleep music, lofi rain beats 💤" target="_blank" style="color: #cccccc; text-decoration: none;">lofi sleep music, lofi rain beats 💤</a></div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-claro">
+        <div class="options">
+            <button class="buttonOp" id="btnPomo" onclick="mudarTela(1)">Pomodoro</button>
+            <button class="buttonOp" id="btnShort" onclick="mudarTela(2)">Short Break</button>
+            <button class="buttonOp" id="btnLong" onclick="mudarTela(3)">Long Break</button>
+        </div>
+        <i class="fa-solid fa-music" id="musicButton"></i>
+        <i class="fa-solid fa-gear" id="configButton"></i>
+        <div class="titulo-container">
+            <div class="tempo" id="timer">25:00</div>
+            <div class="control-options">
+                <i class="fa-solid fa-rotate-right" onclick="reiniciarTimer()"></i>
+                <button class="primeiro" id="botaoTimer" onclick="contador()">Iniciar</button>
+                <i class="fa-solid fa-forward" onclick="pular()"></i>
+            </div>
+            <br>
+            <div id="inter-atual">#1</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <h3>Tarefas</h3>
+            <div class="input-container">
+                <input type="text" id="tarefa-input" placeholder="Digite sua tarefa...">
+                <button id="tarefa-button">Salvar</button>
+            </div>
+            <div class="tarefas" id="lista"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
