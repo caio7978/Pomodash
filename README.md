@@ -1,9 +1,35 @@
-<h1> Pomodash </h1>
-<p> Pomodash é um pomodoro simples tendo uma função a mais de checklist. </p>
-<h2> Integrantes: </h2>
-<h3>Caio </h3>
-<h3>Cauã </h3>
-<h3>Emilly da Costa</h3>
-<h3>Júlia Bernardes</h3>
-<h3>Rafaella Victoria</h3>
-<h3>Vitor Escorcio</h3>
+# ⏱Pomodash
+
+**Pomodash** é um projeto simples que combina a técnica Pomodoro com uma checklist de tarefas, ideal para auxiliar na produtividade e na organização do tempo de estudos ou trabalho.
+
+## Sobre o Projeto
+
+Este projeto foi desenvolvido como atividade acadêmica em grupo, com o objetivo de aplicar conhecimentos básicos de desenvolvimento web.
+
+O sistema oferece:
+
+- Um cronômetro estilo Pomodoro
+- Uma checklist simples para controle de tarefas
+
+## Integrantes do Grupo
+
+- Caio  
+- Cauã  
+- Emilly da Costa  
+- Júlia Bernardes  
+- Rafaella Victoria  
+- Vitor Escorcio
+
+## Tecnologias Utilizadas
+
+- HTML5  
+- CSS3  
+- JavaScript (puro)
+
+## Funcionalidades
+
+- ⏲Timer Pomodoro com pausa e reinício  
+- Lista de tarefas com marcação de concluído   
+
+## 🖼Captura de Tela
+![image](https://github.com/user-attachments/assets/eab75c63-cf2d-47c1-bf05-8054db5be2b5)
